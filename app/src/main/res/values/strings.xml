@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Edited</string>
+    <string name="start">START</string>
+
+    <string name="aprime">a prime?</string>
+    <string name="NEXT">next</string>
+    <string name="PrimeNum">Is number</string>
+    <string name="right">RIGHT</string>
+
+    <string name="wrong">WRONG</string>
+</resources>
