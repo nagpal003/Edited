@@ -11,7 +11,8 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
 
     private TextView tx1;
     private TextView tx2;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Button bt3;
     private Button bt4;
     private Button bt5;
+    int sc = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
                 if(isPrime())
                 {
                     Toast.makeText(getApplicationContext(),"You are correct",Toast.LENGTH_SHORT).show();
-
+                    sc++;
+                    score.setText(String.valueOf(sc));
                     bt3.setEnabled(true);
 
                 }
@@ -75,7 +78,8 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(), "You are incorrect", Toast.LENGTH_SHORT).show();//Gives a msg whether the
                     //user select right ot wrong button
-
+                    sc--;
+                    score.setText(String.valueOf(sc));
                     bt3.setEnabled(true);
 
                 }
@@ -95,11 +99,15 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(),"You are correct",Toast.LENGTH_SHORT).show();
                     bt3.setEnabled(true);
+                    sc++;
+                    score.setText(String.valueOf(sc));
                 }
                 else
                 {
                     Toast.makeText(getApplicationContext(),"You are incorrect",Toast.LENGTH_SHORT).show();
                     bt3.setEnabled(true);
+                    sc--;
+                    score.setText(String.valueOf(sc));
                 }
                 bt2.setEnabled(false);
 
@@ -110,14 +118,7 @@ public class MainActivity extends AppCompatActivity {
         Cheater();
 
     }
-    public void display()
-    {
-        int sc = 0;
-        if(bt1.isSelected())
-        {
 
-        }
-    }
     public boolean isPrime()
     {
         //Generates the prime number
@@ -186,6 +187,8 @@ public void Change()
             public void onClick(View vv)
             {
                 String r = ed.getText().toString();
+                sc--;
+                score.setText(String.valueOf(sc));
                 Intent ii = new Intent(MainActivity.this,ThirdActivity.class);
                 ii.putExtra("edit",r);
                 startActivity(ii);

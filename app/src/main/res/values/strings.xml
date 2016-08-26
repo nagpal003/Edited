@@ -2,10 +2,18 @@
     <string name="app_name">Edited</string>
     <string name="start">START</string>
 
-    <string name="aprime">a prime?</string>
+    <string name="aprime">PRIME?</string>
     <string name="NEXT">next</string>
-    <string name="PrimeNum">Is number</string>
+    <string name="PrimeNum">IS NUMBER</string>
     <string name="right">RIGHT</string>
 
     <string name="wrong">WRONG</string>
+    <string name="hint">HINT</string>
+    <string name="cheat">CHEAT</string>
+    <string name="number">num</string>
+    <string name="message">m</string>
+    <string name="back">Back</string>
+    <string name="bac">Back</string>
+    <string name="statement">Divide the number by 2 if it leaves remainder 0 then it\'s not prime else it is prime number!</string>
+    <string name="scr">SCORE</string>
 </resources>

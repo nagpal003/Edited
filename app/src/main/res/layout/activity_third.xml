@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.hp.edited.ThirdActivity">
+    tools:context="com.example.hp.edited.ThirdActivity"
+    android:background="#914cff">
 
     <View
         android:id="@+id/view1"
@@ -19,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="?android:attr/borderlessButtonStyle"
-        android:text="Back"
+        android:text="@string/back"
         android:id="@+id/button7"
         android:layout_alignTop="@+id/view2"
         android:layout_centerHorizontal="true" />
@@ -34,20 +35,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView4"
-        android:hint="message "
+        android:hint="@string/message"
         android:textStyle="italic"
-        android:layout_marginTop="103dp"
-        android:layout_below="@+id/view1"
+        android:layout_marginTop="98dp"
+        android:layout_below="@+id/button7"
         android:layout_alignLeft="@+id/button7"
-        android:layout_alignStart="@+id/button7"
-        android:layout_marginLeft="43dp"
-        android:layout_marginStart="43dp" />
+        android:layout_alignStart="@+id/button7" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView5"
-        android:hint="number"
+        android:hint="@string/number"
         android:layout_alignBaseline="@+id/textView4"
         android:layout_alignBottom="@+id/textView4"
         android:layout_toLeftOf="@+id/textView4"
