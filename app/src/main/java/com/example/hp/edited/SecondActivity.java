@@ -19,6 +19,7 @@ public class SecondActivity extends AppCompatActivity {
             {
                 //Intent i = new Intent(SecondActivity.this,MainActivity.class);
                 //startActivity(i);
+                Intent i = getIntent();
                 finish();
             }
 

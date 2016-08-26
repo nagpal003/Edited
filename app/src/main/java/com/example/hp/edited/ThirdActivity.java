@@ -30,6 +30,7 @@ public class ThirdActivity extends AppCompatActivity {
                 //startActivity(ii);
 
                 Toast.makeText(getApplicationContext(),"You have cheated",Toast.LENGTH_LONG).show();
+                Intent i = getIntent();
                 finish();
             }
 
